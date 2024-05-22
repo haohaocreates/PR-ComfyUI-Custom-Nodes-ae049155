@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-custom-nodes"
+description = "Nodes: DeepFloyd, Filter, Select, Save, Decode, Encode, Repeat, Noise, Noise"
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.40.1.post1-py3-none-win_amd64.whl; platform_system == \"Windows\"", "bitsandbytes; platform_system != \"Windows\"", "accelerate", "diffusers", "sentencepiece", "transformers"]
+
+[project.urls]
+Repository = "https://github.com/Zuellni/ComfyUI-Custom-Nodes"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-Custom-Nodes"
+Icon = ""
